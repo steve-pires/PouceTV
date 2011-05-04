@@ -1,0 +1,11 @@
+Channel(1):
+   name: TF1
+Channel(2):
+   name: France 2
+   
+Show(1):
+   name: Les enfants de la TV
+   channel: 1
+Show(2):
+   name: Dimanche Martin
+   channel: 2

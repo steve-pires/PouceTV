@@ -1,0 +1,9 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> crud
+    - play -> secure
+    - play -> bespin 1.0.1
+    - play -> fbconnect 0.5
+    - play -> sass 1.0

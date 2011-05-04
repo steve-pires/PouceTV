@@ -1,0 +1,14 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data.yml")
+
+ User(bob):
+   email: user@pouce.tv
+   password: secret
+   fullname: Bob
+   isAdmin: false
+   
+ User(admin):
+   email: admin@pouce.tv
+   password: root
+   fullname: Admin
+   isAdmin: true
