@@ -16,15 +16,3 @@ POST    /{fId}/vote								Application.postVote
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
-
-
-
-
-
-
-
-
-
-
-# ONLY DEV
-GET     /reset                                  Application.reset

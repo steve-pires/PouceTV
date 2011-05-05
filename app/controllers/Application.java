@@ -10,14 +10,6 @@ import play.test.Fixtures;
 
 public class Application extends Controller {
 
-    public static void reset() {
-	Fixtures.deleteDatabase();
-	Fixtures.loadModels("../test/users.yml");
-	Fixtures.loadModels("../test/data.yml");
-
-	CRUD.index();
-    }
-
     public static void index() {
 	List<Channel> channels = Channel.all().fetch();
 	render(channels);
