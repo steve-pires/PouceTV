@@ -12,20 +12,23 @@ import play.db.jpa.Model;
 
 @Entity
 public class Channel extends Model {
-	@Required
-	@Column(unique = true)
-	public String name;
+    @Required
+    @Column(unique=true)
+    public String fId;
+    
+    @Required
+    public String name;
 
-	@OneToMany(mappedBy = "channel", cascade = CascadeType.ALL)
-	public List<Show> shows;
+    @OneToMany(mappedBy = "channel", cascade = CascadeType.ALL)
+    public List<Show> shows;
 
-	public String iconUrl;
+    public String iconUrl;
 
-	public Channel() {
-	}
+    public Channel() {
+    }
 
-	@Override
-	public String toString() {
-		return name + " (" + id + ")";
-	}
+    @Override
+    public String toString() {
+	return name + " (" + id + ")";
+    }
 }

@@ -3,17 +3,6 @@
 
 <ul>
 #{list items:channels, as:'channel'}
-	<li>${channel.id} - ${channel.name}</li>
+	<li><a href="@{Application.show(channel.fId)}">${channel.name}</a></li>
 #{/list}
 </ul>
-
-#{form @Application.vote(), id:'voteForm', method:'POST'}
-	<input type="hidden" name="channel.id" value="13"/>
-    <p>
-        <label for="value">Valeur : </label>
-        <input type="text" name="value" id="value" />
-    </p>
-    <p>
-        <input type="submit" value="Submit your vote" />
-    </p>
-#{/form}
