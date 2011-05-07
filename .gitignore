@@ -10,6 +10,7 @@ eclipse
 modules
 log
 logs
+out
 precompiled
 tmp
 test-result
