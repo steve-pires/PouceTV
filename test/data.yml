@@ -1,7 +1,9 @@
 Channel(1):
    name: TF1
+   fId: tf1
 Channel(2):
    name: France 2
+   fId: france2
    
 Show(1):
    name: Les enfants de la TV
