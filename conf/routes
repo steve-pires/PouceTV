@@ -11,7 +11,7 @@ GET     /                                       Application.index
 * 		/admin									module:crud
 # Pages
 GET		/{fId}									Application.show
-POST    /{fId}/vote								Application.postVote
+POST    /vote								    Application.postVote
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public

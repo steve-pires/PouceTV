@@ -2,3 +2,10 @@
 #{set title:'Home' /}
 
 <h2>${channel?.name}</h2>
+
+#{form @Application.postVote(channel?.id) }
+    <p>
+        <input type="submit" value="UP" name="up"/>
+        <input type="submit" value="DOWN" name="down"/>
+    </p>
+#{/form}
